@@ -4,13 +4,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
         <title>web ar</title>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     </head>
     <body>
         <h1>Web AR</h1>
-        <!-- Import the component -->
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-<!-- Use it like any other HTML element -->
-<model-viewer src="models/tree/tree.glb" ios-src="models/tree/tree.usdz" alt="A 3D model of an astronaut" auto-rotate camera-controls ar></model-viewer>
+        <ul>
+            <li>tree
+                <model-viewer
+                    src="models/tree/tree.glb"
+                    ios-src="models/tree/tree.usdz"
+                    ar
+                    alt="A 3D model of an astronaut"
+                    auto-rotate camera-controls></model-viewer>
+            </li>
+            <li>tree
+                <model-viewer
+                    src="models/tree/tree.glb"
+                    ios-src="models/tree/tree.usdz"
+                    ar
+                    alt="A 3D model of an astronaut"
+                    auto-rotate camera-controls></model-viewer>
+            </li>
+            <li>tree
+                <model-viewer
+                    src="models/tree/tree.glb"
+                    ios-src="models/tree/tree.usdz"
+                    ar
+                    alt="A 3D model of an astronaut"
+                    auto-rotate camera-controls></model-viewer>
+            </li>
+        </ul>
     </body>
 </html>
