@@ -15,10 +15,14 @@
             ar
             alt=""
             auto-rotate camera-controls
-            load="document.querySelector('body > model-viewer').shadowRoot.querySelector('#default-ar-button').click();"></model-viewer> 
+            load="console.log('fired');document.querySelector('body > model-viewer').shadowRoot.querySelector('#default-ar-button').click();"></model-viewer> 
             <script>
-                  document.addEventListener('DOMContentLoaded', (event) => {
+            document.addEventListener('DOMContentLoaded', (event) => {
+                console.log("loaded");
+                setTimeout(1000, function() {
+                    console.log("timed");
                     document.querySelector("body > model-viewer").shadowRoot.querySelector("#default-ar-button").click();
+                });
             });
             </script>
     </body>
