@@ -19,10 +19,10 @@
             <script>
             document.addEventListener('DOMContentLoaded', (event) => {
                 console.log("loaded");
-                setTimeout(1000, function() {
+                setTimeout(function() {
                     console.log("timed");
                     document.querySelector("body > model-viewer").shadowRoot.querySelector("#default-ar-button").click();
-                });
+                }, 1000);
             });
             </script>
     </body>
