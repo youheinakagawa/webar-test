@@ -10,23 +10,29 @@
     <body>
         <h1>VRM</h1>
         <model-viewer
-        src="models/fdml/fdml.glb"
-            ios-src="models/fdml/fdml.usdz"
-            camera-controls
-            autoplay 
-            shadow-intensity="1"
-            ar
-            alt=""
-            auto-rotate camera-controls
-            load="console.log('fired');document.querySelector('body > model-viewer').shadowRoot.querySelector('#default-ar-button').click();"></model-viewer> 
-            <script>
-            document.addEventListener('DOMContentLoaded', (event) => {
-                console.log("loaded");
-                setTimeout(function() {
-                    console.log("timed");
-                    document.querySelector("body > model-viewer").shadowRoot.querySelector("#default-ar-button").click();
-                }, 1000);
-            });
-            </script>
+            src="models/fdml/fdml.glb"
+                ios-src="models/fdml/fdml.usdz"
+                camera-controls
+                autoplay 
+                shadow-intensity="1"
+                ar
+                alt=""
+                auto-rotate camera-controls
+                load="console.log('fired');document.querySelector('body > model-viewer').shadowRoot.querySelector('#default-ar-button').click();">
+        </model-viewer> 
+        <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            console.log("loaded");
+            setTimeout(function() {
+                console.log("timed");
+                document.querySelector("body > model-viewer").shadowRoot.querySelector("#default-ar-button").click();
+            }, 1000);
+        });
+        </script>
+        <h2>iOS</h2>
+        <div><a href="models/fdml/fdml.usdz" rel="ar" type="model/vnd.usdz+zip"><img src="assets/images/preview.png" width="250" alt="preview"></a></div>
+        <div class="sketchfab-embed-wrapper">
+            <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/9b4106b01f404c1d84d9e31127fe5e24/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>        
     </body>
 </html>
