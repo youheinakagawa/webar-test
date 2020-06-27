@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
         <title>web ar</title>
+        <meta property="og:image" content="https://youheinakagawa.github.io/webar-test/assets/images/preview.png">
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
         <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     </head>
@@ -15,7 +16,7 @@
                 Moae and Octopus
                 <model-viewer
                     src="https://youheinakagawa.github.io/webar-test/scenes/moaeandoctopus/scene.gltf"
-                    ios-src="scenes/moaeandoctopus/moaeandoctopus.usdz"
+                    ios-src="https://youheinakagawa.github.io/webar-test/scenes/moaeandoctopus/moaeandoctopus.usdz"
                     ar
                     alt="Moae and Octopus Scene"
                     auto-rotate camera-controls></model-viewer>
@@ -26,7 +27,7 @@
             <li>Octopus
                 <model-viewer
                     src="https://youheinakagawa.github.io/webar-test/models/octopus/scene.gltf"
-                    ios-src="models/octopus/octopus.usdz"
+                    ios-src="https://youheinakagawa.github.io/webar-test/models/octopus/octopus.usdz"
                     ar
                     alt="Octopus Model"
                     auto-rotate camera-controls></model-viewer>
@@ -34,7 +35,7 @@
             <li>Moae
                 <model-viewer
                 src="https://youheinakagawa.github.io/webar-test/models/moae/scene.gltf"
-                    ios-src="models/moae/moae.usdz"
+                    ios-src="https://youheinakagawa.github.io/webar-test/models/moae/moae.usdz"
                     ar
                     alt="A 3D model of an astronaut"
                     auto-rotate camera-controls></model-viewer>
@@ -42,13 +43,18 @@
         </ul>
         <h1>VRM</h1>
         <model-viewer
-        src="https://youheinakagawa.github.io/webar-test/models/fdml/fdml.glb"
-            ios-src="models/fdml/fdml.usdz"
-            camera-controls
-            autoplay 
-            shadow-intensity="1"
-            ar
-            alt=""
-            auto-rotate camera-controls></model-viewer>
+            src="https://youheinakagawa.github.io/webar-test/models/fdml/fdml.glb"
+                ios-src="https://youheinakagawa.github.io/webar-test/models/fdml/fdml.usdz"
+                camera-controls
+                autoplay 
+                shadow-intensity="1"
+                ar
+                alt=""
+                auto-rotate camera-controls>
+        </model-viewer>
+        <h2>iOS</h2>
+        <div><a href="https://youheinakagawa.github.io/webar-test/models/fdml/fdml.usdz" rel="ar" type="model/vnd.usdz+zip"><img src="https://youheinakagawa.github.io/webar-test/assets/images/preview.png" width="250" alt="preview"></a></div>
+        <h2>Android</h2>
+        <div><a href="intent://arvr.google.com/scene-viewer/1.0?file=https%3A%2F%2Fyouheinakagawa.github.io%2Fwebar-test%2Fmodels%2Ffdml%2Ffdml.glb&mode=ar_only&link=https://youheinakagawa.github.io/webar-test/&title=#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https%3A%2F%2Fyouheinakagawa.github.io%2Fwebar-test%2F%23model-viewer-no-ar-fallback;end"><img src="assets/images/preview.png" width="250" alt="preview"></a></div>
     </body>
 </html>
