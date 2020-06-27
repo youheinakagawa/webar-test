@@ -36,8 +36,8 @@
                     shadow-intensity="1"
                     ar
                     alt=""
-                    auto-rotate camera-controls
-                    load="console.log('fired');document.querySelector('body > model-viewer').shadowRoot.querySelector('#default-ar-button').click();">
+                    auto-rotate
+                    camera-controls>
             </model-viewer> 
         </div>
         <script>
@@ -45,7 +45,7 @@
             console.log("loaded");
             setTimeout(function() {
                 console.log("timed");
-                document.querySelector("body > model-viewer").shadowRoot.querySelector("#default-ar-button").click();
+                document.querySelector("model-viewer").shadowRoot.querySelector("#default-ar-button").click();
             }, 1000);
         });
         </script>
