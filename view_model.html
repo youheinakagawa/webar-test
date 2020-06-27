@@ -12,6 +12,12 @@
                 margin: 0;
                 padding: 0;
             }
+            .demo {
+                position: relative;
+                top: 0;
+                flex: 1;
+                align-items: center;
+            }
             model-viewer {
                 width: 100%;
                 height: 100%;
@@ -19,17 +25,19 @@
         </style>
     </head>
     <body>
-        <model-viewer
-            src="https://youheinakagawa.github.io/webar-test/models/fdml/fdml.glb"
-                ios-src="https://youheinakagawa.github.io/webar-test/models/fdml/fdml.usdz"
-                camera-controls
-                autoplay 
-                shadow-intensity="1"
-                ar
-                alt=""
-                auto-rotate camera-controls
-                load="console.log('fired');document.querySelector('body > model-viewer').shadowRoot.querySelector('#default-ar-button').click();">
-        </model-viewer> 
+        <div class="demo">
+            <model-viewer
+                src="https://youheinakagawa.github.io/webar-test/models/fdml/fdml.glb"
+                    ios-src="https://youheinakagawa.github.io/webar-test/models/fdml/fdml.usdz"
+                    camera-controls
+                    autoplay 
+                    shadow-intensity="1"
+                    ar
+                    alt=""
+                    auto-rotate camera-controls
+                    load="console.log('fired');document.querySelector('body > model-viewer').shadowRoot.querySelector('#default-ar-button').click();">
+            </model-viewer> 
+        </div>
         <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             console.log("loaded");
